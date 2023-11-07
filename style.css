@@ -4,3 +4,13 @@
     margin: 0;
 }
 
+:root {
+    --LIGHT-COLOR: #f0f9ff;
+    --GRAY-COLOR: #cbd5e1;
+    --ACCENT-COLOR: #38bdf8;
+    --DARK-COLOR: #082f49;
+}
+
+body {
+    background-color: var(--GRAY-COLOR);
+}
