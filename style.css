@@ -13,6 +13,7 @@
 :root {
     --LIGHT-COLOR: #f0f9ff;
     --GRAY-COLOR: #cbd5e1;
+    --DARK-GRAY-COLOR: #94a3b8;
     --ACCENT-COLOR: #38bdf8;
     --DARK-COLOR: #082f49;
 }
@@ -166,7 +167,49 @@ body {
 /* MAIN SECTION */
 .main {
     background-color: var(--GRAY-COLOR);
+    padding: 30px;
+    user-select: none;
 }
+
+.projects {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--LIGHT-COLOR);
+    border-left: 10px inset var(--ACCENT-COLOR);
+    border-radius: 10px;
+    padding: 30px 20px;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+.card h2 {
+    font-size: 1.3rem;
+}
+.card p {
+    color: var(--DARK-GRAY-COLOR);
+}
+.card .icons {
+    filter: invert(25%);
+    cursor: pointer;
+
+    justify-self: end;
+
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem;
+    grid-template-rows: 2rem;
+    gap: 20px;
+}
+
 
 
 @media only screen and (max-width: 950px){
