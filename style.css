@@ -22,12 +22,8 @@ body {
     background-color: pink;
 
     display: grid;
-    grid-template-columns: 300px 5fr;
+    grid-template-columns: 325px 5fr;
     grid-template-rows: 1fr 4fr;
-}
-
-img {
-    display: none;
 }
 
 .sidebar {
@@ -37,6 +33,43 @@ img {
 
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-rows: 4rem 2fr 2fr;
+    gap: 75px;
+}
+.sidebar img {
+    filter: invert();
+}
+.sidebar ul {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    gap: 30px;
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li a {
+    color: var(--LIGHT-COLOR);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+    gap: 25px;
+}
+.sidebar .icon {
+    width: 2rem;
+    justify-self: center;
+}
+
+.logo .icon {
+    width: 4rem;
+}
+.logo h3 {
+    font-size: 2rem;
 }
 
 .header {
