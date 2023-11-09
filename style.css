@@ -1,5 +1,5 @@
 @font-face {
-    font-family: roboto-regular-fontface;
+    font-family: roboto-custom;
     src: url('./fonts/Roboto-Regular.ttf');
 }
 
@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: roboto-regular-fontface, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: roboto-custom, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
@@ -19,6 +19,7 @@
 }
 
 body {
+    font-family: roboto-custom;
     height: 100vh;
     background-color: pink;
 
@@ -31,6 +32,7 @@ body {
 
 /* SIDEBAR SECTION */
 .sidebar {
+    font-family: roboto-custom;
     color: var(--LIGHT-COLOR);
     background-color: var(--ACCENT-COLOR);
     padding: 20px;
@@ -81,6 +83,7 @@ body {
 
 /* HEADER SECTION */
 .header {
+    font-family: roboto-custom;
     background-color: var(--LIGHT-COLOR);
     user-select: none;
     padding: 20px;
@@ -166,6 +169,7 @@ body {
 
 /* MAIN SECTION */
 .main {
+    font-family: roboto-custom;
     background-color: var(--GRAY-COLOR);
     padding: 30px;
     user-select: none;
