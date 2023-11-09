@@ -7,8 +7,8 @@
 
 @font-face {
     font-family: 'roboto-custom';
-    src: url('./fonts/Roboto-Regular.ttf')
-    format("truetype");
+    src: url('./fonts/Roboto-Regular.woff2')
+    format("woff2");
     font-style: normal;
     font-weight: bold;
 }
