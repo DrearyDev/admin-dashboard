@@ -1,13 +1,13 @@
+@font-face {
+    font-family: roboto-regular-fontface;
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url('./fonts/Roboto-Regular.ttf');
+    font-family: roboto-regular-fontface, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
