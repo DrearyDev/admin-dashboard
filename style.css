@@ -274,7 +274,11 @@ body {
 
 
 
-
+@media only screen and (max-width: 1460px){
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media only screen and (max-width: 950px){
     body {
@@ -282,5 +286,35 @@ body {
     }
     .sidebar {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .search {
+        grid-template-columns: 2rem 1fr 4rem;
+    }
+
+    .profile {
+        grid-template-columns: 4rem;
+        justify-self: center;
+    }
+    .profile .name,
+    .profile .icon {
+        display: none;
+    }
+
+    .actions {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .actions .greeting {
+        display: none;
+    }
+    .actions .buttons {
+        justify-self: center;
+    }
+
+    .main .projects .cards {
+        grid-template-columns: 1fr;
     }
 }
